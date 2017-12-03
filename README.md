@@ -15,14 +15,18 @@ Content
         newsdata.sql - sql file holding the news database
     logsdb.py - python file holding the queries and organizing them as plain text deliverables
     README.md - readme file detailing application specifics
+    output.txt
     
 Operating Instructions
 
     Install and/or load linux os virtual machine or other virtual machine that can operate on postgresql database
     Pull fullstack-nanodegree-vm github repository
+    Change directory to the vagrant directory: use command cd vagrant/
     Run the virtual machine: use command vagrant up
     Log into virtual machine: use command vagrant ssh
+    Once inside of the virtual machine, cd back into vagrant: cd /vagrant
     Open newsdata.zip - this will unzip newsdata.sql
+    The logsdb.py file will query the news database and deliver the answers to the questions
     Run the logsdb.py file: python logsdb.py
 
 
