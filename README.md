@@ -15,7 +15,7 @@ Content
         newsdata.sql - sql file holding the news database
     logsdb.py - python file holding the queries and organizing them as plain text deliverables
     README.md - readme file detailing application specifics
-    output.txt
+    output.txt - txt file that displays output of running logsdb.py
     
 Operating Instructions
 
