@@ -12,9 +12,9 @@ Introduction
 Content
 
     newsdata.zip:
-        logsdb.py - python file holding the queries and organizing them as plain text deliverables
         newsdata.sql - sql file holding the news database
-        README.md - readme file detailing application specifics
+    logsdb.py - python file holding the queries and organizing them as plain text deliverables
+    README.md - readme file detailing application specifics
     
 Operating Instructions
 
