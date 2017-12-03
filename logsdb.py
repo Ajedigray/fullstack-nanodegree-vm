@@ -24,7 +24,7 @@ def popularArticles():
 	rows = c.fetchall()
 	form_row = rows[1:]
   
-  for row in form_row:
+	for row in form_row:
 		value = row[1]
 		num_of_hits = format(value, ',d')
 		string = row[0].title()
@@ -32,11 +32,29 @@ def popularArticles():
 		reform_str = cut_str.replace('-', ' ')
 		print (bullet + '"' + reform_str + '"' + " - " + num_of_hits + views)
 	db.close()
+
+
+def popularAuthors():
+	print (b + "\n2. Who are the most popular article authors of all time?" + r)
+	db = psycopg2.connect(database=DBNAME)
+	c = db.cursor()
+	c.execute('''select authors.name as name, count(*) as frequency from articles,
+				log, authors where log.path = concat('/article/', articles.slug) and
+				authors.id = articles.author group by name order by frequency desc;''')
+	rows = c.fetchall()
+
+	for row in rows:
+		value = row[1]
+		num_of_views = format(value, ',d')
+		author = row[0]
+		print (bullet + '"' + author + '"' + ' - ' + num_of_views + views)
+	db.close()
   
-  
-  def init():
-	  header()
-	  popularArticles()
+def init():
+	header()
+	popularArticles()
+	popularAuthors()
+		
   
   
   init()
