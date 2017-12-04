@@ -16,3 +16,4 @@ Reporting Tool for the News Database
 
 3. On which days did more than 1% of requests lead to errors?
      •  July 17, 2016 - 2.26% errors
+     
