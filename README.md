@@ -1,6 +1,6 @@
 # News_Database_Reporting_Tool
 
-##Introduction
+## Introduction
 
 This application queries data from the `news` database and neatly organizes answers to complex questions in a data reporting tool
 The application uses postgresql for querying the data, and it uses python 2.7 for post processing of the data
@@ -9,7 +9,7 @@ Three distinct answers are answered by this application:
 2. Who are the most popular article authors of all time?
 3. On which days did more than 1% of requests lead to errors?
         
-##Content
+## Content
 
 newsdata.zip:
 newsdata.sql - sql file holding the news database
@@ -18,7 +18,7 @@ Vagrantfile - virtual machine
 README.md - readme file detailing application specifics
 output.txt - txt file that displays output of running logsdb.py
     
-##Operating Instructions
+## Operating Instructions
 
 Install and/or load linux os virtual machine or other virtual machine that can operate on postgresql database
 Pull fullstack-nanodegree-vm github repository
