@@ -28,8 +28,9 @@ output.txt - txt file that displays output of running logsdb.py
  6. Once inside of the virtual machine, cd back into vagrant: `cd /vagrant`
  7. Open newsdata.zip - this will unzip newsdata.sql
  8. Connect to the news database: use command `psql -d news -f newsdata.sql`
- 9. The logsdb.py file will query the news database and deliver the answers to the questions
-10. Run the logsdb.py file: `python logsdb.py`
+ 9. Copy `logsdb.py` into vagrant folder
+10. The logsdb.py file will query the news database and deliver the answers to the questions
+11. Run the logsdb.py file: `python logsdb.py`
 
 
 
