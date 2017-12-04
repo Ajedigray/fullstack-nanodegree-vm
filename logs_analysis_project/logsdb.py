@@ -31,6 +31,7 @@ def execute_query(query):
         c = db.cursor()
         c.execute(query)
         results = c.fetchall()
+        db.close()
 
         return results
     except (Exception, psycopg2.DatabaseError) as error:
