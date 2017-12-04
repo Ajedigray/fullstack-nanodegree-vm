@@ -70,22 +70,14 @@ def errorProne():
                 as error, count(*) as total_requests from log group by month,
                 day, year order by day;''')
     rows = c.fetchall()
-    months = {"1": "January", "2": "February", "3": "March",
-              "4": "April", "5": "May", "6": "June", "7": "July",
-              "8": "August", "9": "September", "10": "October",
-              "11": "November", "12": "December"}
     for row in rows:
         error = int(row[3])
         total = int(row[4])
         error_rate = error / total
 
         if error_rate > 0.01:
-            month = months['%d' % (row[0])]
-            day = '%d' % (row[1])
-            year = '%d' % (row[2])
-            error_rate_pct = str(round(error_rate*100, 2))
-            print (bullet + ' ' + month + ' ' + day + ', ' + year + ' - ' +
-                   error_rate_pct + '% ' + 'errors\n')
+            date = datetime.date(int(row[2]), int(row[0]), int(row[1]))
+            print(bullet + '{:%B %d, %Y} - {:.2%} errors'.format(date, error_rate))
     db.close()
 
 
