@@ -4,6 +4,8 @@
 
 This application queries data from the `news` database and neatly organizes answers to complex questions in a data reporting tool
 The application uses postgresql for querying the data, and it uses python 2.7 for post processing of the data
+The `news` database is a PostgreSQL database for a fictional news website.
+The database has three tables: `authors`, `log`, and `articles`
 Three distinct answers are answered by this application:
 1. What are the most popular three articles of all time?
 2. Who are the most popular article authors of all time?
