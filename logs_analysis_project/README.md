@@ -12,11 +12,11 @@ Three distinct answers are answered by this application:
 ## Content
 
 `logs_analysis_project` - directory holding entire project
-   `newsdata.zip` - zip file holding the sql `news` database
-   `logsdb.py` - python file holding the queries and organizing them as plain text deliverables
-   `Vagrantfile` - virtual machine
-   `README.md` - readme file detailing application specifics
-   `output.txt` - txt file that displays output of running logsdb.py
+   1. `newsdata.zip` - zip file holding the sql `news` database
+   2. `logsdb.py` - python file holding the queries and organizing them as plain text deliverables
+   3. `Vagrantfile` - virtual machine
+   4. `README.md` - readme file detailing application specifics
+   5. `output.txt` - txt file that displays output of running logsdb.py
 
 ## Operating Instructions
 
