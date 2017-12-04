@@ -20,8 +20,8 @@ output.txt - txt file that displays output of running logsdb.py
     
 ## Operating Instructions
 
- 1. Install and/or load linux os virtual machine or other virtual machine that can operate on postgresql database
- 2. Pull fullstack-nanodegree-vm github repository
+ 1. Install and/or load linux os virtual machine or other virtual machine that can operate on postgresql database: [Installing Virtual Box and Vagrant] (https://drupalize.me/videos/installing-vagrant-and-virtualbox?p=1526)
+ 2. Pull fullstack-nanodegree-vm github repository: [News Database Reporting Tool](https://github.com/Ajedigray/fullstack-nanodegree-vm.git)
  3. Change directory to the vagrant directory: use command `cd vagrant/`
  4. Run the virtual machine: use command `vagrant up`
  5. Log into virtual machine: use command `vagrant ssh`
