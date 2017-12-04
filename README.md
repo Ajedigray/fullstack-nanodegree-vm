@@ -20,16 +20,16 @@ output.txt - txt file that displays output of running logsdb.py
     
 ## Operating Instructions
 
-Install and/or load linux os virtual machine or other virtual machine that can operate on postgresql database
-Pull fullstack-nanodegree-vm github repository
-Change directory to the vagrant directory: use command `cd vagrant/`
-Run the virtual machine: use command `vagrant up`
-Log into virtual machine: use command `vagrant ssh`
-Once inside of the virtual machine, cd back into vagrant: `cd /vagrant`
-Open newsdata.zip - this will unzip newsdata.sql
-Connect to the news database: use command `psql -d news -f newsdata.sql`
-The logsdb.py file will query the news database and deliver the answers to the questions
-Run the logsdb.py file: `python logsdb.py`
+ 1. Install and/or load linux os virtual machine or other virtual machine that can operate on postgresql database
+ 2. Pull fullstack-nanodegree-vm github repository
+ 3. Change directory to the vagrant directory: use command `cd vagrant/`
+ 4. Run the virtual machine: use command `vagrant up`
+ 5. Log into virtual machine: use command `vagrant ssh`
+ 6. Once inside of the virtual machine, cd back into vagrant: `cd /vagrant`
+ 7. Open newsdata.zip - this will unzip newsdata.sql
+ 8. Connect to the news database: use command `psql -d news -f newsdata.sql`
+ 9. The logsdb.py file will query the news database and deliver the answers to the questions
+10. Run the logsdb.py file: `python logsdb.py`
 
 
 
